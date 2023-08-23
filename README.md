@@ -1,4 +1,8 @@
-# React + Vite
+# Sivaji portfolio
+# site is live on netlify : https://sivaji-portfolio-react.netlify.app/
+## screenshot
+<img src="https://github.com/sivajisj/react-portfolio-sj/blob/main/sj.png" />
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
