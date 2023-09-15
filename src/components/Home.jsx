@@ -12,10 +12,10 @@ const Home = () => {
           SIVAJI GADIDALA
         </h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
-          I'm a Full stack Developer.
+          I'm a MERN stack Developer.
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
-          I’m a Full stack developer specializing in building (and occasionally
+          I’m a MERN stack developer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
            learning & building responsive full-stack web applications.
         </p>
