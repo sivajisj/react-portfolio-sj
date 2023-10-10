@@ -19,6 +19,7 @@ function App() {
    <>
    <Navbar/>
    <Home/>
+   
    <About/>
    <Skills/>
    <Workk/>
