@@ -11,6 +11,9 @@ import Java from  '../assets/java.png'
 import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
 import HTML from '../assets/html.png';
+import Express from "../assets/express.png"
+import redux from "../assets/redux.png"
+import mongodb from "../assets/mongodb.png"
 
 const Skills = () => {
   return (
@@ -41,8 +44,16 @@ const Skills = () => {
                 <p className='my-4'>nodeJs</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img  className='w-20 mx-auto' src={Express} alt="express icon" />
+                <p className='my-4'>Express</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={reactt} alt="react icon" />
                 <p className='my-4'>reactJS</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img  className='w-20 mx-auto' src={redux} alt="redux icon" />
+                <p className='my-4'>Redux</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={Figma} alt="Figma icon" />
@@ -59,6 +70,10 @@ const Skills = () => {
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={Solidity} alt="Solidity icon" />
                     <p className='my-4'>Solidity</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                <img  className='w-20 mx-auto' src={mongodb} alt="Solidity icon" />
+                    <p className='my-4'>MongoDB</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={mysql} alt="Mysql icon" />
