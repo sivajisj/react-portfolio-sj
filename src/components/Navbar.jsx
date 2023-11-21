@@ -99,7 +99,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li className='w-[160px] bg-purple-900 ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://drive.google.com/file/d/1v8yLVs6tVwHRrEGGoz1sWscglwZ9hYlH/view?usp=drive_link" className='flex justify-between items-center text-gray-300 w-full' > Resume <BsFillPersonLinesFill size={30} />
+            <a href="https://drive.google.com/file/d/1-A0W7AN-sAr5Xm8bRHg6pHNosbgs70ju/view?usp=sharing" className='flex justify-between items-center text-gray-300 w-full' > Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
           <li className='w-[160px] bg-[#089994] ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
