@@ -1,5 +1,5 @@
 import React from 'react'
- import AgeC from "../assets/agec.png"
+ import Blog from "../assets/blog.jpg"
  import Calculator from "../assets/calc.jpg"
 
  import ExpenseTracker from "../assets/expenseT.png"
@@ -114,21 +114,20 @@ const Workk = () => {
                 </div>
 
 
-                <div style={{backgroundImage:`url(${AgeC})`}} className='shadow-lg shadow-[#040c16] container
+                <div style={{backgroundImage:`url(${Blog})`}} className='shadow-lg shadow-[#040c16] container
                 items-center group rounded-md flex justify-center
                 mx-auto content-div'>
                      {/* hover effect */}
                       <div className='opacity-0 group-hover:opacity-100'>
                         <h3 className='text-2xl font-bold text-white tracking-wider text-center mx-6'>
-                           JS 
-                            Age Calculator 
+                          Blog App using Flask
                         </h3>
 
                         <div className='flex justify-center items-center'>
-                        <a href="https://age-calculatorr-app.netlify.app">
+                        <a href="https://blog-app-flask-cjuj.onrender.com/">
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '> Demo</button>
                         </a>
-                        <a href="https://github.com/sivajisj/AgeCalculator">
+                        <a href="https://github.com/sivajisj/Blog-App">
                             <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '> Code</button>
                         </a>
                         </div>
