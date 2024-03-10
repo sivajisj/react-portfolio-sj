@@ -14,6 +14,8 @@ import HTML from '../assets/html.png';
 import Express from "../assets/express.png"
 import redux from "../assets/redux.png"
 import mongodb from "../assets/mongodb.png"
+import Flask from "../assets/flask.png"
+
 
 const Skills = () => {
   return (
@@ -74,6 +76,10 @@ const Skills = () => {
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={mongodb} alt="Solidity icon" />
                     <p className='my-4'>MongoDB</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+             <img  className='w-20 mx-auto' src={Flask} alt="Java icon" />
+                <p className='my-4'>Flask </p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-20 mx-auto' src={mysql} alt="Mysql icon" />
