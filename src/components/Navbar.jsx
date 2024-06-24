@@ -95,7 +95,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li className='w-[160px] bg-[#3281d5] ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://twitter.com/iamsivajisj?t=1aIlFQShApjN50JW891vFw&s=09" className='flex justify-between items-center text-gray-300 w-full' >Twitter <FaTwitter size={30}/>
+            <a href="https://x.com/sivajiisj" className='flex justify-between items-center text-gray-300 w-full' >Twitter <FaTwitter size={30}/>
             </a>
           </li>
           <li className='w-[160px] bg-purple-900 ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
