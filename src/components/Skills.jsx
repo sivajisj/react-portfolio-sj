@@ -10,7 +10,7 @@ import Tailwind from '../assets/tailwind.png'
 import Java from  '../assets/java.png'
 import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
-import Linux from '../assets/linux-22618.png';
+import Linux from '../assets/linux.png';
 import Express from "../assets/express.png"
 import redux from "../assets/redux.png"
 import mongodb from "../assets/mongodb.png"
