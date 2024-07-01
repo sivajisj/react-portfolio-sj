@@ -12,7 +12,6 @@ import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
 import Linux from '../assets/linux.png';
 import Express from "../assets/express.png"
-import redux from "../assets/redux.png"
 import mongodb from "../assets/mongodb.png"
 import Django from "../assets/django.png"
 import Docker from "../assets/docker.png"
@@ -55,10 +54,6 @@ const Skills = () => {
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-16 mx-auto' src={reactt} alt="react icon" />
                 <p className='my-4'>reactJS</p>
-            </div>
-            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-16 mx-auto' src={redux} alt="redux icon" />
-                <p className='my-4'>Redux</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-16 mx-auto' src={Figma} alt="Figma icon" />
