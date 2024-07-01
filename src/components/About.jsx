@@ -17,13 +17,9 @@ const About = () => {
               <p>Hi. I'm Sivaji, nice to meet you. Please take a look around.</p>
             </div>
             <div>
-              <p>Hello! I take pride in offering the best UI/UX design that not only 
-                looks appealing but also ensures a seamless user experience.
-                 My expertise extends to responsive web development, 
-                 ensuring websites look and function perfectly across all devices.
-                  Additionally, I'm proficient in writing solidity smart contracts,
-                   opening the gateway to the world of blockchain for your needs. 
-                Let's bring your ideas to digital life together!</p>  
+              <p>Hello! I take pride in offering exceptional UI/UX design that combines visual appeal with seamless user experiences. My expertise spans responsive web development, ensuring flawless functionality across all devices. Proficient in Python, JavaScript, and Solidity, I leverage frameworks like Django and NodeJS to build robust applications.
+
+With experience in tools such as Docker, Kubernetes, and GitHub, I bring efficiency and reliability to the development process. Additionally, I excel in writing Solidity smart contracts, opening the gateway to blockchain solutions for your needs. Let's bring your ideas to digital life together!</p>  
             </div>
           </div>
       </div>
