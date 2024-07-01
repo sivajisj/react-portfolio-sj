@@ -10,11 +10,14 @@ import Tailwind from '../assets/tailwind.png'
 import Java from  '../assets/java.png'
 import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
-import Linux from '../assets/html.png';
+import Linux from '../assets/linux-22618.png';
 import Express from "../assets/express.png"
 import redux from "../assets/redux.png"
 import mongodb from "../assets/mongodb.png"
 import Django from "../assets/django.png"
+import Docker from "../assets/docker.png"
+import Git from "../assets/git.png"
+import Shell from "../assets/shell.png"
 
 
 const Skills = () => {
@@ -29,60 +32,72 @@ const Skills = () => {
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
-                  <p className='my-4'>HTML</p>
+                  <img className='w-16 mx-auto' src={Linux} alt="HTML icon" />
+                  <p className='my-4'>Linux</p>
               </div>
               
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={Javascript} alt="Javascript icon" />
+                <img  className='w-16 mx-auto' src={Javascript} alt="Javascript icon" />
                 <p className='my-4'>Javascript</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={python} alt="python icon" />
+                <img  className='w-16 mx-auto' src={python} alt="python icon" />
                 <p className='my-4'>Python</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={node} alt="node icon" />
+                <img  className='w-16 mx-auto' src={node} alt="node icon" />
                 <p className='my-4'>nodeJs</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={Express} alt="express icon" />
+                <img  className='w-16 mx-auto' src={Express} alt="express icon" />
                 <p className='my-4'>Express</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={reactt} alt="react icon" />
+                <img  className='w-16 mx-auto' src={reactt} alt="react icon" />
                 <p className='my-4'>reactJS</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={redux} alt="redux icon" />
+                <img  className='w-16 mx-auto' src={redux} alt="redux icon" />
                 <p className='my-4'>Redux</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={Figma} alt="Figma icon" />
+                <img  className='w-16 mx-auto' src={Figma} alt="Figma icon" />
                 <p className='my-4'>Figma</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={Tailwind} alt="Tailwindcss icon" />
+                <img  className='w-16 mx-auto' src={Tailwind} alt="Tailwindcss icon" />
                 <p className='my-4'>Tailwindcss</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-             <img  className='w-20 mx-auto' src={Java} alt="Java icon" />
+             <img  className='w-16 mx-auto' src={Java} alt="Java icon" />
                 <p className='my-4'>Java</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={Solidity} alt="Solidity icon" />
+                <img  className='w-16 mx-auto' src={Solidity} alt="Solidity icon" />
                     <p className='my-4'>Solidity</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={mongodb} alt="Solidity icon" />
+                <img  className='w-16 mx-auto' src={mongodb} alt="Solidity icon" />
                     <p className='my-4'>MongoDB</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-             <img  className='w-20 mx-auto' src={Flask} alt="Java icon" />
-                <p className='my-4'>Flask </p>
+             <img  className='w-16 mx-auto' src={Django} alt="Java icon" />
+                <p className='my-4'>Django </p>
+            </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+             <img  className='w-16 mx-auto' src={Docker} alt="Java icon" />
+                <p className='my-4'>Docker </p>
+            </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+             <img  className='w-16 mx-auto' src={Shell} alt="Java icon" />
+                <p className='my-4'>Shell </p>
+            </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+             <img  className='w-16 mx-auto' src={Git} alt="Java icon" />
+                <p className='my-4'>Git </p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-20 mx-auto' src={mysql} alt="Mysql icon" />
+                <img  className='w-16 mx-auto' src={mysql} alt="Mysql icon" />
                 <p className='my-4'>Mysql</p>
              </div>
 
