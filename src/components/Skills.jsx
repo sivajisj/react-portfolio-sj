@@ -10,11 +10,11 @@ import Tailwind from '../assets/tailwind.png'
 import Java from  '../assets/java.png'
 import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
-import HTML from '../assets/html.png';
+import Linux from '../assets/html.png';
 import Express from "../assets/express.png"
 import redux from "../assets/redux.png"
 import mongodb from "../assets/mongodb.png"
-import Flask from "../assets/flask.png"
+import Django from "../assets/django.png"
 
 
 const Skills = () => {
