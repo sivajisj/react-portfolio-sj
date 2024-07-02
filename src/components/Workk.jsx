@@ -51,7 +51,7 @@ const Workk = () => {
                      {/* hover effect */}
                       <div className='opacity-0 group-hover:opacity-100'>
                         <h3 className='text-2xl font-bold text-white tracking-wider text-center mx-6'>
-                            StudyBud Chat-Room Using Django
+                            StudyBud Chat Room Using Django
                         </h3>
 
                         <div className='flex justify-center items-center'>
