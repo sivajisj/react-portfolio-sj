@@ -3,9 +3,9 @@ import React from 'react'
  import Calculator from "../assets/calc.jpg"
 
  import ExpenseTracker from "../assets/expenseT.png"
- import Airbnb from "../assets/Airbnb.jpg"
  import Meme from "../assets/meme.jpg"
  import Rocket from "../assets/Rocket.png"
+import Room from "../assets/chat-rooms.jpg"
 
  
 const Workk = () => {
@@ -45,22 +45,21 @@ const Workk = () => {
                  
                     </div> 
                 </div>
-                <div style={{backgroundImage:`url(${Airbnb})`}} className='shadow-lg shadow-[#040c16] container
+                <div style={{backgroundImage:`url(${Room})`}} className='shadow-lg shadow-[#040c16] container
                 items-center group rounded-md flex justify-center
                 mx-auto content-div'>
                      {/* hover effect */}
                       <div className='opacity-0 group-hover:opacity-100'>
                         <h3 className='text-2xl font-bold text-white tracking-wider text-center mx-6'>
-                            React JS
-                            Airbnb Clone 
+                            StudyBud Chat-Room Using Django
                         </h3>
 
                         <div className='flex justify-center items-center'>
-                        <a href="https://airbnb-clone-sj.netlify.app">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '> Demo</button>
+                        <a href="https://chat-rooms-sj.onrender.com">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '>Demo</button>
                         </a>
-                        <a href="https://github.com/sivajisj/clone-airbnb">
-                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '> Code</button>
+                        <a href="https://github.com/sivajisj/Django-space/tree/main/studybud">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg '>Code</button>
                         </a>
                         </div>
                        
