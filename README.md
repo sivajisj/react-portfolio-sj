@@ -1,5 +1,5 @@
 # Sivaji portfolio
-# site is live on netlify : https://sivaji-portfolio-react.netlify.app/
+# site is live on netlify : https://sivaji-portfolio.netlify.app/
 ## screenshot
 <img src="https://github.com/sivajisj/react-portfolio-sj/blob/main/sj.png" />
 
