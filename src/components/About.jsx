@@ -11,17 +11,38 @@ const About = () => {
             </p>
           </div>
           <div></div>
-          </div>
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
-              <p>Hi. I'm Sivaji, nice to meet you. Please take a look around.</p>
-            </div>
-            <div>
-              <p>Hello! I take pride in offering exceptional UI/UX design that combines visual appeal with seamless user experiences. My expertise spans responsive web development, ensuring flawless functionality across all devices. Proficient in Python, JavaScript, and Solidity, I leverage frameworks like Django and NodeJS to build robust applications.
+        </div>
 
-With experience in tools such as Docker, Kubernetes, and GitHub, I bring efficiency and reliability to the development process. Additionally, I excel in writing Solidity smart contracts, opening the gateway to blockchain solutions for your needs. Let's bring your ideas to digital life together!</p>  
-            </div>
+        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+          <div className='sm:text-right text-4xl font-bold'>
+            <p>Hi, I'm Sivaji. Great to meet you!</p>
           </div>
+          <div>
+            <p className="leading-relaxed">
+              I’m a <span className="text-yellow-400 font-medium">Full Stack & Web3 Developer</span> {" "}
+              passionate about building scalable, high-performance applications. My expertise includes{" "}
+              <span className="text-yellow-400 font-medium">Solidity, Ethereum, Solana, smart contracts</span>, 
+              and modern web frameworks like{" "}
+              <span className="text-yellow-400 font-medium">React, Node.js, and Python</span>. 
+              I focus on creating seamless bridges between{" "}
+              <span className="text-yellow-400 font-medium">Web2 and Web3</span> to deliver next-gen digital experiences.
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+              Beyond coding, I bring reliability and efficiency with tools such as{" "}
+              <span className="text-yellow-400 font-medium">Docker, Kubernetes, and GitHub</span>. 
+              I specialize in{" "}
+              <span className="text-yellow-400 font-medium">DeFi, dApps, and blockchain-based solutions</span>, 
+              aiming to design products that push the boundaries of innovation.
+            </p>
+
+            <p className="mt-4 leading-relaxed">
+              If you’re looking for a developer who can deliver impactful 
+              <span className="text-yellow-400 font-medium"> blockchain applications</span> 
+              and robust full-stack systems — let’s connect and build something meaningful together.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

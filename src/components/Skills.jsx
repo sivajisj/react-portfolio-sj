@@ -7,16 +7,16 @@ import reactt from  '../assets/react.png'
 import python from  '../assets/python.png'
 import Figma from  '../assets/figma.png'
 import Tailwind from '../assets/tailwind.png'
-import Java from  '../assets/java.png'
+import Solana from  '../assets/solana.jpeg'
 import Solidity from  '../assets/solidity.png'
 import mysql from  '../assets/mysql.png'
 import Linux from '../assets/linux.png';
 import Express from "../assets/express.png"
-import mongodb from "../assets/mongodb.png"
-import Django from "../assets/django.png"
+import Rust from "../assets/rust.jpeg"
 import Docker from "../assets/docker.png"
 import Git from "../assets/git.png"
-import Shell from "../assets/shell.png"
+import Django from "../assets/django.png"
+import Anchor from "../assets/anchor.webp"
 
 
 const Skills = () => {
@@ -64,28 +64,28 @@ const Skills = () => {
                 <p className='my-4'>Tailwindcss</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-             <img  className='w-16 mx-auto' src={Java} alt="Java icon" />
-                <p className='my-4'>Java</p>
+             <img  className='w-16 mx-auto' src={Solana} alt="Java icon" />
+                <p className='my-4'>Solana</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                 <img  className='w-16 mx-auto' src={Solidity} alt="Solidity icon" />
                     <p className='my-4'>Solidity</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                <img  className='w-16 mx-auto' src={mongodb} alt="Solidity icon" />
-                    <p className='my-4'>MongoDB</p>
+                <img  className='w-16 mx-auto' src={Rust} alt="Solidity icon" />
+                    <p className='my-4'>Rust</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-             <img  className='w-16 mx-auto' src={Django} alt="Java icon" />
-                <p className='my-4'>Django </p>
+             <img  className='w-16 mx-auto' src={Anchor} alt="Java icon" />
+                <p className='my-4'>Anchor </p>
             </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
              <img  className='w-16 mx-auto' src={Docker} alt="Java icon" />
                 <p className='my-4'>Docker </p>
             </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-             <img  className='w-16 mx-auto' src={Shell} alt="Java icon" />
-                <p className='my-4'>Shell </p>
+             <img  className='w-16 mx-auto' src={Django} alt="Java icon" />
+                <p className='my-4'>Django </p>
             </div>
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
              <img  className='w-16 mx-auto' src={Git} alt="Java icon" />
