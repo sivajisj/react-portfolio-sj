@@ -65,7 +65,7 @@ const Contact = () => {
             </a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1ZyJf2nl-VA1zKBnWTqj4PvNWyIKAWmj-/view?usp=sharing" target="_blank" rel="noreferrer"
+            <a href="https://github.com/sivajisj/sivajisj/blob/main/sivaji_web3_dev.pdf" target="_blank" rel="noreferrer"
               className="text-gray-300 hover:text-purple-400 transition duration-300 text-2xl">
               <BsFillPersonLinesFill />
             </a>
@@ -88,3 +88,4 @@ const Contact = () => {
 }
 
 export default Contact;
+
