@@ -1,51 +1,80 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const stats = [
+  { label: 'Blockchain Ecosystems', value: 'Solana · EVM' },
+  { label: 'Backend Language', value: 'Rust' },
+  { label: 'Current Focus', value: 'DePIN on Solana' },
+  { label: 'Open To', value: 'Blockchain / Rust roles' },
+]
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-yellow-400'>
-              About
-            </p>
-          </div>
-          <div></div>
-        </div>
+    <div name="about" className="w-full py-24">
+      <div className="max-w-[1100px] mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="section-eyebrow">// who i am</p>
+          <h2 className="section-heading mt-2 mb-10">About</h2>
+        </motion.div>
 
-        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-          <div className='sm:text-right text-4xl font-bold'>
-            <p>Hi, I'm Sivaji. Great to meet you!</p>
-          </div>
-          <div>
-            <p className="leading-relaxed">
-              I’m a <span className="text-yellow-400 font-medium">Full Stack & Web3 Developer</span> {" "}
-              passionate about building scalable, high-performance applications. My expertise includes{" "}
-              <span className="text-yellow-400 font-medium">Solidity, Ethereum, Solana, smart contracts</span>, 
-              and modern web frameworks like{" "}
-              <span className="text-yellow-400 font-medium">React, Node.js, and Python</span>. 
-              I focus on creating seamless bridges between{" "}
-              <span className="text-yellow-400 font-medium">Web2 and Web3</span> to deliver next-gen digital experiences.
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="space-y-4 text-slate-400 leading-relaxed"
+          >
+            <p>
+              I'm a <span className="text-white font-medium">full-stack blockchain engineer</span> specializing
+              in three pillars: <span className="text-accent-cyan">Solana</span> (Anchor, SPL, PDAs, CPIs),{' '}
+              <span className="text-accent-cyan">Ethereum / EVM</span> (Solidity, Hardhat, OpenZeppelin), and{' '}
+              <span className="text-accent-cyan">Rust backend infrastructure</span> (Axum, Tokio, async
+              microservices).
             </p>
+            <p>
+              I'm currently working at <span className="text-white font-medium">Simreka Softwares Pvt. Ltd.</span>,
+              while building <span className="text-white font-medium">DePIN (decentralized physical
+              infrastructure)</span> protocols on Solana — focused on trustless uptime verification systems
+              that rely on cryptographic on-chain proofs instead of self-reporting.
+            </p>
+            <p>
+              On the smart contract side, I design and ship voting systems, token bridges, and lending
+              protocols with proper access control and liquidation logic. On the backend side, I write
+              production-grade async Rust services for transaction queuing, multi-chain status tracking, and
+              gRPC-based microservices.
+            </p>
+            <p>
+              I'm actively looking for <span className="text-white font-medium">Blockchain Engineer</span>,{' '}
+              <span className="text-white font-medium">Rust Backend</span>, and{' '}
+              <span className="text-white font-medium">Smart Contract</span> opportunities where I can ship
+              secure, performant on-chain systems.
+            </p>
+          </motion.div>
 
-            <p className="mt-4 leading-relaxed">
-              Beyond coding, I bring reliability and efficiency with tools such as{" "}
-              <span className="text-yellow-400 font-medium">Docker, Kubernetes, and GitHub</span>. 
-              I specialize in{" "}
-              <span className="text-yellow-400 font-medium">DeFi, dApps, and blockchain-based solutions</span>, 
-              aiming to design products that push the boundaries of innovation.
-            </p>
-
-            <p className="mt-4 leading-relaxed">
-              If you’re looking for a developer who can deliver impactful 
-              <span className="text-yellow-400 font-medium"> blockchain applications</span> 
-              and robust full-stack systems — let’s connect and build something meaningful together.
-            </p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-2 gap-4"
+          >
+            {stats.map((s) => (
+              <div key={s.label} className="glass glass-hover rounded-xl p-5">
+                <p className="text-lg font-bold text-white">{s.value}</p>
+                <p className="font-mono text-xs text-slate-500 uppercase tracking-wide mt-1">{s.label}</p>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default About
