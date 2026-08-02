@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-    body {
-        @apply font-[Raleway];
-    }
-    li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans bg-base text-slate-300; }
+  li { @apply cursor-pointer; }
+  ::selection { @apply bg-accent-cyan/30 text-white; }
 }
-.content-div{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-   
-    height: 250px;
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan via-accent to-accent-fuchsia animate-gradient-x bg-[length:200%_auto];
+  }
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08];
+  }
+  .glass-hover {
+    @apply transition-all duration-300 hover:border-accent-cyan/40 hover:bg-white/[0.06];
+  }
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-white tracking-tight;
+  }
+  .section-eyebrow {
+    @apply font-mono text-sm text-accent-cyan tracking-widest uppercase;
+  }
 }
-.content-div:hover{
-    background-image: linear-gradient(
-        to right,
-        rgba(112,157,255,0.8),
-        hsla(242,74%,61%,0.8)
-    )!important;
-}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: #1b2436; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #2a3650; }

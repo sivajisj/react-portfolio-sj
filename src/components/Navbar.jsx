@@ -1,118 +1,83 @@
-import React, { useState } from 'react'
-import {FaBars,FaTimes ,FaGithub,
-  FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,FaTwitter} from 'react-icons/fa'
-  import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import logo from '../assets/sjlogo.png'
-import {Link} from 'react-scroll'
+import React, { useEffect, useState } from 'react'
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { Link } from 'react-scroll'
+import { RESUME_LINK, SOCIALS } from '../data/profile'
+
+const NAV_LINKS = [
+  { to: 'home', label: 'Home' },
+  { to: 'about', label: 'About' },
+  { to: 'experience', label: 'Experience' },
+  { to: 'skills', label: 'Skills' },
+  { to: 'work', label: 'Projects' },
+  { to: 'contact', label: 'Contact' },
+]
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [nav, setNav] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
-    <div className='justify-between flex items-center 
-    fixed w-full text-gray-300 h-[90px] px-4 bg-[#0a192f]'>
-       <div>
-     <img src={logo} alt="sj" width={120}/>
-       </div>
-       {/* menu */}
+    <div
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? 'bg-base/80 backdrop-blur-xl border-b border-white/[0.08]' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-[1200px] mx-auto flex justify-between items-center h-[76px] px-6">
+        <Link to="home" smooth duration={500} className="cursor-pointer font-mono text-lg font-bold text-white">
+          &lt;SJ<span className="text-accent-cyan">/</span>&gt;
+        </Link>
 
-   
-        <ul className='hidden md:flex'>
-        <li>
-          <Link to="home"  smooth={true} offset={50} duration={500} >
-          Home
-        </Link>
-        </li>
-        <li><Link to="about"  smooth={true} offset={50} duration={500} >
-          About
-        </Link>
-        </li>
-        <li><Link to="skills"  smooth={true} offset={50} duration={500} >
-          Skills
-        </Link>
-        </li>
-        <li><Link to="work"  smooth={true} offset={50} duration={500} >
-          Work
-        </Link>
-        </li>
-        <li><Link to="contact"  smooth={true} offset={50} duration={500} >
-          Contact
-        </Link></li>
+        <ul className="hidden md:flex items-center gap-6 font-mono text-sm">
+          {NAV_LINKS.map((l) => (
+            <li key={l.to} className="text-slate-400 hover:text-accent-cyan transition-colors duration-200 px-0">
+              <Link to={l.to} smooth offset={-76} duration={500}>{l.label}</Link>
+            </li>
+          ))}
         </ul>
-    
-       {/* Hamburger */}
 
-       <div onClick={handleClick}  className='md:hidden z-10'>
-       {!nav ? <FaBars /> : <FaTimes />}
-       </div>
+        <div className="hidden md:flex items-center gap-4">
+          <a href={SOCIALS.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors"><FaGithub size={19} /></a>
+          <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors"><FaLinkedin size={19} /></a>
+          <a
+            href={RESUME_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="font-mono text-sm border border-accent-cyan/40 text-accent-cyan px-4 py-1.5 rounded-lg hover:bg-accent-cyan/10 transition-colors duration-200"
+          >
+            Resume
+          </a>
+        </div>
 
-       {/* mobile-menu */}
-     
-       <ul className={
-          !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+        <div onClick={() => setNav(!nav)} className="md:hidden z-10 text-white cursor-pointer">
+          {nav ? <FaTimes size={22} /> : <FaBars size={22} />}
+        </div>
+
+        <ul className={nav
+          ? 'absolute top-0 left-0 w-full h-screen bg-base/95 backdrop-blur-xl flex flex-col justify-center items-center gap-2'
+          : 'hidden'
         }>
-            <li className='py-6 text-4xl'> <Link to="home" onClick={handleClick} smooth={true} offset={50} duration={500} >
-             Home
-            </Link>
+          {NAV_LINKS.map((l) => (
+            <li key={l.to} className="py-3 text-3xl font-mono text-slate-200 px-0">
+              <Link onClick={() => setNav(false)} to={l.to} smooth offset={-76} duration={500}>{l.label}</Link>
+            </li>
+          ))}
+          <li className="flex gap-6 mt-6 text-slate-300 px-0">
+            <a href={SOCIALS.github} target="_blank" rel="noreferrer"><FaGithub size={26} /></a>
+            <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer"><FaLinkedin size={26} /></a>
+            <a href={SOCIALS.twitter} target="_blank" rel="noreferrer"><FaTwitter size={26} /></a>
+            <a href={`mailto:${SOCIALS.email}`}><HiOutlineMail size={26} /></a>
+            <a href={RESUME_LINK} target="_blank" rel="noreferrer"><BsFillPersonLinesFill size={26} /></a>
           </li>
-            <li  className='py-6 text-4xl'>
-              
-            <Link to="about" onClick={handleClick} smooth={true} offset={50} duration={500} >About</Link>
-
-            </li>
-            <li  className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="skills"  smooth={true} offset={50} duration={500} > Skills </Link>
-         
-       
-            </li>
-            <li  className='py-6 text-4xl'>
-            <Link to="work" onClick={handleClick}  smooth={true} offset={50} duration={500} >  Work </Link>
-
-       
-            </li>
-            <li className='py-6 text-4xl'>
-            <Link to="contact" onClick={handleClick}   smooth={true} offset={50} duration={500} >  Contact </Link>
-
-        
-            </li>
         </ul>
-       
-
-       {/* Social-icons */}
-       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] bg-[#0072b1] ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://www.linkedin.com/in/sivaji-gadidala-b712ba221" className='flex justify-between items-center text-gray-300 w-full' >LinkedIn <FaLinkedin size={30}/>
-            </a>
-          </li>
-          <li className='w-[160px] bg--[#333333]  ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://github.com/sivajisj" className='flex justify-between items-center text-gray-300 w-full' >Github <FaGithub size={30}/>
-            </a>
-          </li>
-          <li className='w-[160px] bg-[#3281d5] ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://x.com/sivajiisj" className='flex justify-between items-center text-gray-300 w-full' >Twitter <FaTwitter size={30}/>
-            </a>
-          </li>
-          <li className='w-[160px] bg-purple-900 ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="https://drive.google.com/file/d/1ZyJf2nl-VA1zKBnWTqj4PvNWyIKAWmj-/view?usp=sharing" className='flex justify-between items-center text-gray-300 w-full' > Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] bg-[#089994] ml-[-100px] duration-300 hover:ml-[-10px] h-[60px] flex justify-between items-center'>
-            <a href="/" className='flex justify-between items-center text-gray-300 w-full' > Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          
-        </ul>
-       </div>
+      </div>
     </div>
-    
-    
-  
   )
 }
-
