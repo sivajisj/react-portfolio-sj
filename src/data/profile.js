@@ -69,26 +69,36 @@ export const SKILL_GROUPS = [
 
 export const PROJECTS = [
   {
+    title: 'Invoice Payment Service',
+    description:
+      'Production-grade multi-tenant invoicing API built in Rust (edition 2024). Features pluggable payment providers, transactional outbox pattern for guaranteed webhook delivery, idempotency keys to prevent duplicate charges, and HMAC-signed webhook callbacks. Full OpenAPI/Swagger docs, Docker-composed PostgreSQL 16, and 55 integration tests covering auth, idempotency, and multi-tenant isolation.',
+    tags: ['Rust', 'Axum', 'SQLx', 'PostgreSQL', 'Docker', 'OpenAPI'],
+    repo: 'https://github.com/sivajisj/invoice-payment-service',
+    demo: 'https://drive.google.com/file/d/1Sibp4zHGQ9gV_THmLuHZiu6sgOq4Y4_9/view?usp=drivesdk',
+    featured: true,
+  },
+  {
     title: 'RouterPulse — DePIN Uptime Protocol',
     description:
-      'Trustless Wi-Fi router uptime tracking on Solana. Routers submit signed heartbeat transactions; scoring (+1 on-time, −10 late) and reward distribution are computed purely from on-chain data.',
-    tags: ['Solana', 'Anchor 0.30', 'Rust', 'DePIN', 'TypeScript'],
+      'Full-stack DePIN network on Solana where routers prove uptime via device-key signed heartbeats. On-chain Anchor 1.0 program computes per-epoch scores (+1 on-time, −10 late), distributes SPL token rewards, enforces collateral staking and slash penalties, and applies cliff+linear vesting. NestJS API layer with Redis pub/sub, Next.js 15 dashboard, Sign-In with Solana (SIWS) auth, and on-chain RBAC.',
+    tags: ['Solana', 'Anchor 1.0', 'Rust', 'DePIN', 'NestJS', 'Next.js 15', 'Redis'],
     repo: 'https://github.com/sivajisj/RouterPulse-Depin-Protocol',
     featured: true,
   },
   {
-    title: 'Decentralized Voting Board',
+    title: 'NFT Minting Platform',
     description:
-      'On-chain voting platform where vote counts are read live from smart contracts — eliminating tampering. Admin dashboard + MetaMask wallet-gated voter flow, JWT auth in httpOnly cookies.',
-    tags: ['Solidity', 'Next.js', 'TypeScript', 'MetaMask', 'MongoDB'],
-    repo: 'https://github.com/sivajisj/voting-board',
+      'Gas-optimised ERC-721A NFT collection deployed and verified on Sepolia. Supports batch minting up to 10/tx, Merkle-tree allowlist (32-byte root, proof-verified on-chain), ERC-2981 royalty standard (5%), and a reveal pattern with a placeholder URI. Comprehensive Foundry test suite including fuzz tests and invariant checks. Guarded by OpenZeppelin ReentrancyGuard and Ownable.',
+    tags: ['Solidity', 'ERC-721A', 'Foundry', 'Sepolia', 'OpenZeppelin', 'Merkle Proof'],
+    repo: 'https://github.com/sivajisj/nft-mint-platform',
+    explorer: 'https://sepolia.etherscan.io/address/0x1d24fe1860f4e670afd65c1b93118a4b4f5c0f54',
     featured: true,
   },
   {
     title: 'Cross-Chain Token Bridge',
     description:
-      'ERC-20 lock-and-mint bridge between Sepolia and Polygon Amoy. Deployed and verified on live testnets. Event-driven Node.js relayer listens for lock events and triggers mints.',
-    tags: ['Solidity', 'ethers.js v6', 'Hardhat', 'Sepolia', 'Polygon Amoy'],
+      'ERC-20 lock-and-mint bridge between Sepolia and Polygon Amoy — both contracts deployed and Etherscan-verified. Deterministic nonces prevent replay attacks; emergency pause and CEI pattern guard against exploits. Event-driven Node.js relayer (ethers.js v6) listens for lock events on the source chain and triggers mints on the destination. React frontend with MetaMask integration. 7 comprehensive Hardhat tests.',
+    tags: ['Solidity 0.8.28', 'ethers.js v6', 'Hardhat', 'Sepolia', 'Polygon Amoy', 'React'],
     repo: 'https://github.com/sivajisj/cross-chain-bridge',
     featured: true,
   },
@@ -98,22 +108,14 @@ export const PROJECTS = [
       'Permissionless over-collateralized lending: deposit, borrow, repay, interest accrual, and on-chain liquidation logic with price feed integration.',
     tags: ['Solidity', 'DeFi', 'Hardhat', 'OpenZeppelin v5'],
     repo: 'https://github.com/sivajisj/defi-lending-protocol-v2',
-    featured: true,
-  },
-  {
-    title: 'High-Performance Rust Transaction Service',
-    description:
-      'Async Rust microservice for multi-chain transaction queuing, status tracking, retry with backoff, and webhook notifications. Zero-cost abstractions via Axum + Tokio.',
-    tags: ['Rust', 'Axum', 'Tokio', 'SQLx', 'PostgreSQL'],
-    repo: 'https://github.com/sivajisj',
     featured: false,
   },
   {
-    title: 'AI Smart Contract Security Agent',
+    title: 'Decentralized Voting Board',
     description:
-      'Autonomous agent for Solidity vulnerability detection: reentrancy, overflow, access control flaws, unchecked external calls. Generates AI-driven audit reports.',
-    tags: ['Rust', 'Python', 'Solidity AST', 'LLM APIs'],
-    repo: 'https://github.com/sivajisj',
+      'On-chain voting platform where vote counts are read live from smart contracts — eliminating tampering. Admin dashboard + MetaMask wallet-gated voter flow, JWT auth in httpOnly cookies.',
+    tags: ['Solidity', 'Next.js', 'TypeScript', 'MetaMask', 'MongoDB'],
+    repo: 'https://github.com/sivajisj/voting-board',
     featured: false,
   },
   {

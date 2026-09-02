@@ -38,9 +38,19 @@ const Card = ({ project, delay }) => (
           href={project.explorer}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-white transition-colors"
+          className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-accent-cyan transition-colors"
         >
           <HiOutlineExternalLink /> Explorer
+        </a>
+      )}
+      {project.demo && (
+        <a
+          href={project.demo}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-accent-cyan transition-colors"
+        >
+          <HiOutlineExternalLink /> Demo
         </a>
       )}
     </div>
