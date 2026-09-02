@@ -71,8 +71,9 @@ export const PROJECTS = [
   {
     title: 'Invoice Payment Service',
     description:
-      'Production-grade multi-tenant invoicing API built in Rust (edition 2024). Features pluggable payment providers, transactional outbox pattern for guaranteed webhook delivery, idempotency keys to prevent duplicate charges, and HMAC-signed webhook callbacks. Full OpenAPI/Swagger docs, Docker-composed PostgreSQL 16, and 55 integration tests covering auth, idempotency, and multi-tenant isolation.',
+      'Production-grade multi-tenant invoicing API built in Rust (edition 2024). Features pluggable payment providers, transactional outbox pattern for guaranteed webhook delivery, idempotency keys to prevent duplicate charges, and HMAC-signed webhook callbacks. Full OpenAPI/Swagger docs, Docker-composed PostgreSQL 16.',
     tags: ['Rust', 'Axum', 'SQLx', 'PostgreSQL', 'Docker', 'OpenAPI'],
+    metrics: ['55 integration tests', 'Multi-tenant API-key auth', 'Transactional outbox', 'HMAC webhooks'],
     repo: 'https://github.com/sivajisj/invoice-payment-service',
     demo: 'https://drive.google.com/file/d/1Sibp4zHGQ9gV_THmLuHZiu6sgOq4Y4_9/view?usp=drivesdk',
     featured: true,
@@ -80,16 +81,18 @@ export const PROJECTS = [
   {
     title: 'RouterPulse — DePIN Uptime Protocol',
     description:
-      'Full-stack DePIN network on Solana where routers prove uptime via device-key signed heartbeats. On-chain Anchor 1.0 program computes per-epoch scores (+1 on-time, −10 late), distributes SPL token rewards, enforces collateral staking and slash penalties, and applies cliff+linear vesting. NestJS API layer with Redis pub/sub, Next.js 15 dashboard, Sign-In with Solana (SIWS) auth, and on-chain RBAC.',
+      'Full-stack DePIN network on Solana where routers prove uptime via device-key signed heartbeats. On-chain Anchor 1.0 program computes per-epoch scores (+1 on-time, −10 late), distributes SPL token rewards, enforces collateral staking and slash penalties, and applies cliff+linear vesting.',
     tags: ['Solana', 'Anchor 1.0', 'Rust', 'DePIN', 'NestJS', 'Next.js 15', 'Redis'],
+    metrics: ['On-chain reward distribution', 'SIWS auth', 'Slash & vesting', 'Redis pub/sub'],
     repo: 'https://github.com/sivajisj/RouterPulse-Depin-Protocol',
     featured: true,
   },
   {
     title: 'NFT Minting Platform',
     description:
-      'Gas-optimised ERC-721A NFT collection deployed and verified on Sepolia. Supports batch minting up to 10/tx, Merkle-tree allowlist (32-byte root, proof-verified on-chain), ERC-2981 royalty standard (5%), and a reveal pattern with a placeholder URI. Comprehensive Foundry test suite including fuzz tests and invariant checks. Guarded by OpenZeppelin ReentrancyGuard and Ownable.',
+      'Gas-optimised ERC-721A NFT collection deployed and verified on Sepolia. Supports batch minting up to 10/tx, Merkle-tree allowlist (32-byte root, proof-verified on-chain), ERC-2981 royalty standard (5%), and a reveal pattern. Comprehensive Foundry suite including fuzz tests and invariant checks.',
     tags: ['Solidity', 'ERC-721A', 'Foundry', 'Sepolia', 'OpenZeppelin', 'Merkle Proof'],
+    metrics: ['Deployed & verified on Sepolia', 'Batch mint ≤10/tx', 'Fuzz + invariant tests', 'ERC-2981 royalties'],
     repo: 'https://github.com/sivajisj/nft-mint-platform',
     explorer: 'https://sepolia.etherscan.io/address/0x1d24fe1860f4e670afd65c1b93118a4b4f5c0f54',
     featured: true,
@@ -97,8 +100,9 @@ export const PROJECTS = [
   {
     title: 'Cross-Chain Token Bridge',
     description:
-      'ERC-20 lock-and-mint bridge between Sepolia and Polygon Amoy — both contracts deployed and Etherscan-verified. Deterministic nonces prevent replay attacks; emergency pause and CEI pattern guard against exploits. Event-driven Node.js relayer (ethers.js v6) listens for lock events on the source chain and triggers mints on the destination. React frontend with MetaMask integration. 7 comprehensive Hardhat tests.',
+      'ERC-20 lock-and-mint bridge between Sepolia and Polygon Amoy — both contracts deployed and Etherscan-verified. Deterministic nonces prevent replay attacks; emergency pause and CEI pattern guard against exploits. Event-driven Node.js relayer listens for lock events and triggers mints on the destination.',
     tags: ['Solidity 0.8.28', 'ethers.js v6', 'Hardhat', 'Sepolia', 'Polygon Amoy', 'React'],
+    metrics: ['2 chains: Sepolia + Polygon Amoy', '7 Hardhat tests', 'CEI + emergency pause', 'Deterministic nonces'],
     repo: 'https://github.com/sivajisj/cross-chain-bridge',
     featured: true,
   },
