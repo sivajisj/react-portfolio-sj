@@ -21,7 +21,7 @@ export const ROLES = [
 export const EXPERIENCE = [
   {
     role: 'Full Stack Blockchain Engineer',
-    company: 'Simreka Softwares Pvt. Ltd.',
+    company: 'Blockchain Startup',
     period: 'Aug 2024 – Present',
     highlights: [
       'Building DePIN protocols on Solana using Anchor — trustless uptime proofs with automated on-chain reward distribution',

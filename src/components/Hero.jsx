@@ -47,8 +47,8 @@ const Hero = () => {
             <span className="text-white font-medium">Solana</span> (Anchor, SPL, PDAs, CPIs),{' '}
             <span className="text-white font-medium">Ethereum / EVM</span> (Solidity, Hardhat, OpenZeppelin),
             and <span className="text-white font-medium">Rust backend</span> (Axum, Tokio, async microservices).
-            Currently building DePIN protocols at{' '}
-            <span className="text-accent-cyan">Simreka Softwares</span>.
+            Currently building DePIN protocols at a{' '}
+            <span className="text-accent-cyan">blockchain startup</span>.
           </p>
 
           <div className="flex flex-wrap gap-4">

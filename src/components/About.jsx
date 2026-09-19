@@ -69,7 +69,7 @@ const About = () => (
           </p>
           <p>
             Currently at{' '}
-            <span className="text-accent-cyan font-medium">Simreka Softwares Pvt. Ltd.</span>, building{' '}
+            a <span className="text-accent-cyan font-medium">blockchain startup</span>, building{' '}
             <span className="text-white font-medium">DePIN protocols on Solana</span> — trustless,
             cryptographically-verified infrastructure systems that eliminate self-reporting entirely.
           </p>
