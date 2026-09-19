@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
-import { RESUME_LINK, SOCIALS } from '../data/profile'
+import { SOCIALS } from '../data/profile'
 
 const NAV_LINKS = [
   { to: 'home', label: 'Home' },
@@ -46,14 +45,6 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           <a href={SOCIALS.github} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors"><FaGithub size={19} /></a>
           <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white transition-colors"><FaLinkedin size={19} /></a>
-          <a
-            href={RESUME_LINK}
-            target="_blank"
-            rel="noreferrer"
-            className="font-mono text-sm border border-accent-cyan/40 text-accent-cyan px-4 py-1.5 rounded-lg hover:bg-accent-cyan/10 transition-colors duration-200"
-          >
-            Resume
-          </a>
         </div>
 
         <div onClick={() => setNav(!nav)} className="md:hidden z-10 text-white cursor-pointer">
@@ -74,7 +65,6 @@ export const Navbar = () => {
             <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer"><FaLinkedin size={26} /></a>
             <a href={SOCIALS.twitter} target="_blank" rel="noreferrer"><FaTwitter size={26} /></a>
             <a href={`mailto:${SOCIALS.email}`}><HiOutlineMail size={26} /></a>
-            <a href={RESUME_LINK} target="_blank" rel="noreferrer"><BsFillPersonLinesFill size={26} /></a>
           </li>
         </ul>
       </div>

@@ -2,15 +2,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { SOCIALS, PHONE, RESUME_LINK } from '../data/profile'
+import { SOCIALS, PHONE } from '../data/profile'
 
 const LINKS = [
   { href: SOCIALS.linkedin, icon: <FaLinkedin size={20} />, label: 'LinkedIn', color: 'hover:text-[#0077B5] hover:border-[#0077B5]/30' },
   { href: SOCIALS.github, icon: <FaGithub size={20} />, label: 'GitHub', color: 'hover:text-white hover:border-white/30' },
   { href: SOCIALS.twitter, icon: <FaTwitter size={20} />, label: 'Twitter / X', color: 'hover:text-sky-400 hover:border-sky-400/30' },
   { href: SOCIALS.whatsapp, icon: <FaWhatsapp size={20} />, label: 'WhatsApp', color: 'hover:text-[#25D366] hover:border-[#25D366]/30' },
-  { href: RESUME_LINK, icon: <BsFillPersonLinesFill size={20} />, label: 'Resume', color: 'hover:text-accent hover:border-accent/30' },
   { href: `mailto:${SOCIALS.email}`, icon: <HiOutlineMail size={20} />, label: 'Email', color: 'hover:text-accent-cyan hover:border-accent-cyan/30' },
 ]
 
