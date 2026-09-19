@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { FiDownload } from 'react-icons/fi'
 import { Link } from 'react-scroll'
-import { ROLES, RESUME_LINK } from '../data/profile'
+import { ROLES } from '../data/profile'
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -59,11 +58,11 @@ const Hero = () => {
                 <HiArrowNarrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </Link>
-            <a href={RESUME_LINK} target="_blank" rel="noreferrer">
+            <Link to="contact" smooth offset={-76} duration={500}>
               <button className="border border-white/15 text-slate-200 font-semibold px-6 py-3 rounded-lg flex items-center gap-2 hover:border-accent-cyan/40 hover:text-white transition-all duration-300">
-                <FiDownload /> Resume
+                Contact Me
               </button>
-            </a>
+            </Link>
           </div>
         </motion.div>
 
